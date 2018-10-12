@@ -47,6 +47,7 @@ public class Registry {
 
     public static void initSubsystems() {
         for (Subsystem subsystem : subsystems.values()) {
+            subsystem.registerSettings();
             subsystem.init();
         }
     }
