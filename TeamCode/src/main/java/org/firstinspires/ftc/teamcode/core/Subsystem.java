@@ -6,7 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Subsystem {
+    public OpModeExtended context;
     public Map<String, Field> settings = new HashMap<>();
+
+    public Subsystem(OpModeExtended context) {
+        this.context = context;
+    }
 
     public abstract void init();
     public abstract void updateData();

@@ -8,18 +8,16 @@ import org.firstinspires.ftc.teamcode.core.Subsystem;
 import java.util.Map;
 
 public class FakeLoggingSubsystem extends Subsystem {
-    OpModeExtended context;
     Telemetry telemetry;
     @Setting
     public Map<String, String> logMessages;
 
     public FakeLoggingSubsystem(OpModeExtended context) {
-        this.context = context;
-        this.telemetry = context.telemetry;
+        super(context);
     }
 
     public void init() {
-
+        this.telemetry = context.telemetry;
     }
 
     public void updateData() {
