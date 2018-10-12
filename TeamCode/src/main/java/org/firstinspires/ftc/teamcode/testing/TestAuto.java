@@ -27,6 +27,7 @@ public class TestAuto extends OpModeExtended {
             file = null;
             Subsystem subsystem = Registry.getSubsystemByName("fakeLoggingSubsystem");
             subsystem.setting("logMessages", new HashMap<String, String>());
+            int i = 0 / 0;
         }
         public void autoupdate() {
             Subsystem subsystem = Registry.getSubsystemByName("fakeLoggingSubsystem");
