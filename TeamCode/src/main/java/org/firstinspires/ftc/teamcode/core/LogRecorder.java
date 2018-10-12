@@ -35,7 +35,7 @@ public class LogRecorder {
             String line;
 
             while((line = bufferedReader.readLine()) != null) {
-                if (line.contains("team-code-")) {
+                if (line.contains("team-code")) {
                     log.append(line);
                     log.append("\n");
                 }

@@ -27,7 +27,6 @@ public abstract class OpModeExtended extends OpMode {
             gamepadExtended1.update();
             gamepadExtended2.update();
 
-            Registry.reset();
             Registry.grabData(classHolder);
             Registry.initSensors();
             Registry.initSubsystems();
